@@ -1,6 +1,6 @@
 #!/bin/tclsh
-set checkURL    "https://raw.githubusercontent.com/netprog2019/Homematic-HomeBrew-Komponenten/main/HB-MR-Devices-AddOn/src/addon/VERSION"
-set downloadURL "https://github.com/netprog2019/Homematic-HomeBrew-Komponenten/raw/main/HB-MR-Devices-AddOn/McRip_CCU_AddOn.tgz"
+set checkURL    "https://github.com/SHellSys/Homematic-Homebrew-SH/tree/main/HB-SH-Devices-AddOn/src/addon/VERSION"
+set downloadURL "https://github.com/SHellSys/Homematic-Homebrew-SH/tree/main/hb-sh-devices-addon.tgz"
 
 catch {
   set input $env(QUERY_STRING)
