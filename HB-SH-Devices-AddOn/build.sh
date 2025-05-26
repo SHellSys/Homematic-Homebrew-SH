@@ -1,6 +1,6 @@
 #!/bin/sh
 #COPYFILE_DISABLE=1; export COPYFILE_DISABLE
-ADDON_NAME=hb-sh-devices-addon
+ADDON_NAME=HB-SH-Devices-AddOn
 
 rm ${ADDON_NAME}.tgz
 cd src
