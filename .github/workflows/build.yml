@@ -19,3 +19,19 @@ jobs:
       run: git update-index --chmod=+x ./build.sh
     - name: Run build script
       run: ./build.sh
+  publish:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./HB-SH-Devices-AddOn
+    steps:
+      - uses: actions/checkout@master
+      - name: Compress
+        uses: a7ul/tar-action@v1.1.0
+        id: compress
+        with:
+          command: c
+          cwd: ./
+          files: |
+            ../HB-SH-Devices-AddOn
+          outPath: HB-SH-Devices-AddOn.tgz
