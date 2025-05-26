@@ -15,5 +15,7 @@ jobs:
     steps:
     - name: Check out the repository to the runner
       uses: actions/checkout@v4  
+    - name: Set permission
+      run: git update-index --chmod=+x ./build.sh
     - name: Run build script
       run: ./build.sh
