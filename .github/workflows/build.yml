@@ -17,16 +17,10 @@ jobs:
       uses: actions/checkout@v4
     - name: Run build script
       run: ./build.sh
-  publish:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./HB-SH-Devices-AddOn
-    steps:
-      - name: Push TGZ to repository
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -m "HB-SH-Devices-AddOn.tgz"
-          git push
+    - name: Push TGZ to repository
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add -A
+        git commit -m "HB-SH-Devices-AddOn.tgz"
+        git push
